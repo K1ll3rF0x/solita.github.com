@@ -57,7 +57,19 @@ $ Cypress run
 // Stuff
 ```
 
-## Bonus: Testing inputs with naughty strings
+## Bonus: Testing with naughty strings
+
+As an experiment, I wanted to try out if we could break our app by inserting some "naughty strings" in our form fields.
+For this, I created a simple random string generator that combines strings from a collection of troublesome strings that might cause problems if used as user-input.
+I didn't use so much time for this feature, maybe 30 minutes or so, so it cannot be compared to more advanced fuzzing techniques.
+
+To my surprise, the generated strings were able to cause a few issues in our app that were related to string parsing or form field validation.
+Evidently, using these strings in combination with your ordinary input tests might catch a few more extra bugs.
+
+```javascript
+// Code
+```
+
 
 
 ## Conclusion
